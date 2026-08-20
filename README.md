@@ -1,6 +1,6 @@
-# Python Coding Standard for AI Agents (py-guide)
+# Python Code generation skill for AI Agents
 
-A robust, production-grade Python coding standard and rule set specifically engineered for AI coding agents, automated workflows, and pair-programming assistants.
+Description - A robust, production-ready Python code generation skill and rule set specifically engineered for AI coding agents, automated workflows, and pair-programming assistants.
 
 ---
 
@@ -8,7 +8,7 @@ A robust, production-grade Python coding standard and rule set specifically engi
 
 Automated code generation tools frequently suffer from predictable anti-patterns: swapping dependencies without justification, introducing race conditions through naive file checks, executing I/O at import time, or swallowing exceptions silently.
 
-The `py-guide` skill provides a comprehensive, prioritized rule set that enforces high standards of correctness, security, architectural discipline, and style across both existing repositories and greenfield Python projects.
+This skill provides a comprehensive, prioritized rule set that enforces high standards of correctness, security, architectural discipline, and style across both existing repositories and greenfield Python projects.
 
 ---
 
@@ -88,7 +88,7 @@ Before finalizing code changes, complete the following verification steps:
 ## Primary Use Cases
 
 ### 1. AI Agent Instruction and System Prompts
-Serves as an operational standard and reference for AI coding agents (such as Antigravity, Claude, Copilot, or Cursor) to ensure generated code conforms to enterprise-grade quality and safety standards.
+Serves as an operational standard and reference for AI coding agents (such as Antigravity, Claude, Copilot, or Cursor) to ensure generated code conforms to production-ready quality and safety standards.
 
 ### 2. Greenfield Project Initialization
 Provides an immediate, production-ready set of baseline conventions for bootstrapping new Python services, CLI utilities, and backend microservices with modern tooling (`uv`, `Ruff`, `pytest`, `mypy`).
