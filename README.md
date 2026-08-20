@@ -1,6 +1,14 @@
-# Python Code generation skill for AI Agents
+# Universal Python Code Generation Skill for AI Agents
 
-Description - A robust, production-ready Python code generation skill and rule set specifically engineered for AI coding agents, automated workflows, and pair-programming assistants.
+A production-ready Python coding standard and code generation skill specifically engineered for AI coding agents, automated workflows, and pair-programming assistants.
+
+## Installation
+
+Install directly into your AI agent environment using the `skills` CLI:
+
+```bash
+npx skills add dancrackit/Universal-python-code-gen-skill-for-agents
+```
 
 ---
 
