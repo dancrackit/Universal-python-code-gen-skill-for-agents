@@ -164,13 +164,3 @@ Before calling anything done, run (or state clearly why you couldn't):
 If verification can't be run, say exactly what wasn't run and why - don't imply it passed.
 
 ---
-
-## Reconciled against Dagster's "Dignified Python"
-
-Dagster's public LLM-agent rules (dagster.io, Jan 2026) also lead with LBYL-by-default, which is worth checking against §4 rather than dismissing outright. On inspection, their own code examples are narrower than a blanket rule and don't actually conflict with it:
-
-- Their LBYL example is a dict-membership check on **state the code itself owns**, with no external actor that can mutate it between the check and the use - exactly the case §4 already calls safe for LBYL.
-- Their `exists()`-before-`.resolve()` example doesn't touch file *content* - it's the narrower, legitimate carve-out described in §8, not the TOCTOU-prone pattern below.
-- They explicitly carve out exceptions at error boundaries and third-party APIs that force try/except - functionally the same scope §4 gives to EAFP.
-
-So "LBYL by default," read as "LBYL for state you own," and this guide's split aren't in conflict. What's still rejected is the *blanket* version - check-then-read a file's content with no exception handling at all - because that specific pattern breaks under concurrency regardless of which source recommends it.
