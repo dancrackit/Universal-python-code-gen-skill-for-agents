@@ -1,3 +1,8 @@
+---
+name: universal-python-code-gen
+description: Comprehensive, production-ready Python coding standard and code generation rules for AI agents. Enforces strict precedence (Inspect project -> Correctness -> Security -> Robustness -> Performance -> Style), concurrency-safe error handling (LBYL vs. EAFP), modern static typing, zero import-time I/O, and architectural guardrails across greenfield and existing Python projects.
+---
+
 # Python Coding Standard for AI Agents
 
 Precedence when rules conflict: **Inspect project → Correctness → Security → Robustness → Performance → Style.**
